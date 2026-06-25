@@ -1,0 +1,1278 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+<body>
+<link href="css/estilo.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="scripts/jquery-131.js"></script>
+<script type="text/javascript" src="scripts/default.js"></script>
+<link href="css/estilo.css" rel="stylesheet" type="text/css">
+<script>
+function mostraOculta(idParteProcesso,idTabela,linhaCount,tipoInfo){
+var titulo;
+var conteudoHTML;
+var span = document.getElementById('span'+tipoInfo+idParteProcesso);
+var trEndAdv = document.getElementById('tr'+tipoInfo+idParteProcesso);
+var tr = document.getElementById('tr'+idParteProcesso);
+var td = document.getElementById('td'+idParteProcesso);
+var td1 = document.getElementById('td1'+idParteProcesso);
+var tabela = document.getElementById(idTabela);
+if	(trEndAdv == null)	{
+var novotr = tabela.insertRow(tr.rowIndex+1);
+novotr.id = 'tr'+tipoInfo+idParteProcesso;
+if(linhaCount % 2 == 0){
+novotr.className = 'linhaEscura';
+}
+else{
+novotr.className = 'linhaClara';
+}
+novotd = novotr.insertCell(0);
+novotd.innerHTML = span.innerHTML;
+novotd.colSpan = 4;
+td.rowSpan = td.rowSpan+1;
+td1.rowSpan = td1.rowSpan+1;
+}	else	{
+td.rowSpan = td.rowSpan-1;
+td1.rowSpan = td1.rowSpan-1;
+tabela.deleteRow(trEndAdv.rowIndex);
+}
+}
+</script>
+<style>
+h1 {margin:5px;}
+h2 {text-align:center; color: #990000;}
+h3 {text-align:center; color: #000000;}
+.movimResponsEmNomeDe {font-style:italic;text-decoration:underline;}
+</style>
+<div id="dadosProcessoPopulacao">
+<h3><a href="http://e-processo.tce.sp.gov.br" target="_blank"><img src="imgs/logo_etcesp.png" border="0" title="e-TCESP - Processo Eletrônico do Tribunal de Contas do Estado de São Paulo"/></a><br />e-TCESP - Processo Eletrônico do Tribunal de Contas do Estado de São Paulo</h3>
+<h2>Cópia digital de processo</h2>
+<script src="imagens/MostraOculta.js"></script>
+<img  src="imagens/processoArquivado.gif" style="position:absolute;z-index:2;right:60px;" />
+<div id="Partes">
+<table id="zebra" width="98%" align="center" cellpadding="0" cellspacing="0">
+<tr class="primeiraLinha">
+<td colspan="4"><h1>Processo nº 00022032.989.24-6</h1></td>
+</tr>
+<tr class="tZebra">
+<td nowrap="nowrap" >
+<div align="center"><strong>Requerente/Solicitante</strong></div>
+</td>
+<td colspan="3">
+<table style="width:100%;" class="tabelaLista" id="tabelaPartes87">
+<tr>
+<th></th>
+<th>Nome</th>
+<th style="width:120px;"></th>
+<th style="width:120px;">CPF/CNPJ</th>
+<th style="width:120px;">Advogados</th>
+<th style="width:120px;"></th>
+</tr>
+<tr id="tr707681"
+class="linhaEscura"
+>
+<td id="td707681" style="white-space:nowrap;text-align:center;width:20px;"></td>
+<td id="td1707681" style="padding-left:5px;">OSMAR TREVISAN</td>
+<td style="white-space:nowrap;text-align:center;width:120px;"></td>
+<td style="white-space:nowrap;text-align:center;width:120px;">***.216.558-**</td>
+<td style="white-space:nowrap;text-align:center;width:120px;">
+<a href="javascript: mostraOculta('707681','tabelaPartes87',0,'Adv')">Mostrar/Ocultar</a>
+</td>
+<td style="white-space:nowrap;text-align:center;width:120px;">
+</td>
+</tr>
+</table>
+<span id="spanAdv707681" style="visibility:hidden;display:none;">
+<table class="tabelaEndereco" style="width:100%;">
+<tr class="tCinza">
+<td width="93" class="topico" >Advogado</td>
+</tr>
+<tr>
+<td>
+<table style="width:100%;" class="tabelaLista" id="tabelaAdvogadoPartes<%=tipo%>">
+<tr><td style="padding-left:5px;">Nenhum advogado cadastrado.</td></tr>
+</table>
+</td>
+</tr>
+</table>
+</span>
+</td>
+<tr class="tZebra">
+<td nowrap="nowrap" >
+<div align="center"><strong>Mencionado(a)</strong></div>
+</td>
+<td colspan="3">
+<table style="width:100%;" class="tabelaLista" id="tabelaPartes67">
+<tr>
+<th></th>
+<th>Nome</th>
+<th style="width:120px;"></th>
+<th style="width:120px;">CPF/CNPJ</th>
+<th style="width:120px;">Advogados</th>
+<th style="width:120px;"></th>
+</tr>
+</table>
+</td>
+<tr class="tZebra">
+<td nowrap="nowrap" >
+<div align="center"><strong>Órgão da Origem</strong></div>
+</td>
+<td colspan="3">
+<table style="width:100%;" class="tabelaLista" id="tabelaPartes86">
+<tr>
+<th></th>
+<th>Nome</th>
+<th style="width:120px;"></th>
+<th style="width:120px;">CPF/CNPJ</th>
+<th style="width:120px;">Advogados</th>
+<th style="width:120px;"></th>
+</tr>
+<tr id="tr707682"
+class="linhaEscura"
+>
+<td id="td707682" style="white-space:nowrap;text-align:center;width:20px;"></td>
+<td id="td1707682" style="padding-left:5px;">CAMARA MUNICIPAL DE CESARIO LANGE</td>
+<td style="white-space:nowrap;text-align:center;width:120px;"></td>
+<td style="white-space:nowrap;text-align:center;width:120px;">54.329.545/0001-75</td>
+<td style="white-space:nowrap;text-align:center;width:120px;">
+<a href="javascript: mostraOculta('707682','tabelaPartes86',0,'Adv')">Mostrar/Ocultar</a>
+</td>
+<td style="white-space:nowrap;text-align:center;width:120px;">
+</td>
+</tr>
+</table>
+<span id="spanAdv707682" style="visibility:hidden;display:none;">
+<table class="tabelaEndereco" style="width:100%;">
+<tr class="tCinza">
+<td width="93" class="topico" >Advogado</td>
+</tr>
+<tr>
+<td>
+<table style="width:100%;" class="tabelaLista" id="tabelaAdvogadoPartes<%=tipo%>">
+<tr><td style="padding-left:5px;">Nenhum advogado cadastrado.</td></tr>
+</table>
+</td>
+</tr>
+</table>
+</span>
+</td>
+<tr class="tZebra">
+<td nowrap="nowrap" >
+<div align="center"><strong>Interessado(a)</strong></div>
+</td>
+<td colspan="3">
+<table style="width:100%;" class="tabelaLista" id="tabelaPartes85">
+<tr>
+<th></th>
+<th>Nome</th>
+<th style="width:120px;"></th>
+<th style="width:120px;">CPF/CNPJ</th>
+<th style="width:120px;">Advogados</th>
+<th style="width:120px;"></th>
+</tr>
+</table>
+</td>
+</tr>
+<tr class="tZebra">
+<td align="left" nowrap="nowrap"><strong>Processo Principal:</strong></td>
+<td rowspan="1" class="style2">
+O Próprio
+</td>
+<td valign="middle" align="left" nowrap="nowrap" class="style2"><b>Processo(s) Dependente(s):</b></td>
+<td valign="top" align="left" class="style2">
+</td>
+</tr>
+<tr class="tZebra">
+<td align="left" nowrap="nowrap"><strong>Recurso/Ação do:</strong></td>
+<td rowspan="1" class="style2">
+</td>
+<td valign="middle" align="left" nowrap="nowrap" class="style2"><b>Recurso(s)/Ação(ões) vinculado(s):</b></td>
+<td valign="top" align="left" class="style2">
+</td>
+</tr>
+<tr class="tZebra">
+<td align="left" nowrap="nowrap"><strong>Processo(s) Referenciado(s):</strong></td>
+<td rowspan="1" colspan="3" class="style2">
+</td>
+</tr>
+<tr class="tZebra">
+<td align="left" nowrap="nowrap"><strong>Processo(s) Referenciado(s) a este:</strong></td>
+<td rowspan="1" colspan="3" class="style2">
+00004003.989.24-1<br>
+</td>
+</tr>
+<tr class="tZebra">
+<td align="left" nowrap="nowrap"><strong>Cópia de:</strong></td>
+<td rowspan="1" colspan="3" class="style2">
+
+</td>
+</tr>
+<tr class="tZebra">
+<td align="left" nowrap="nowrap"><strong>Cópia(s) deste:</strong></td>
+<td rowspan="1" colspan="3" class="style2">
+</td>
+</tr>
+<tr class="tZebra">
+<td align="center" nowrap>
+<div align="left"><strong>Gabinete:</strong></div>
+</td>
+<td colspan="3">GCRMC
+	&nbsp; &nbsp; <b>
+Conselheiro:
+</b>
+RENATO MARTINS COSTA
+</td>
+</tr>
+<tr class="tZebra">
+<td align="center" nowrap><div align="left"><strong>Assunto:</strong></div></td>
+<td>Expedientes « Administração Pública</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="tZebra">
+<td height="18" align="center" nowrap><div align="left"><strong>Complementares:</strong></div></td>
+<td colspan="3" valign="top">
+<table width="100%" border="0">
+<tr>
+<td style="border-bottom:0.4px solid #7f7f7f;"> Ano de 2024 « Exercício</td>
+</tr>
+<tr>
+<td style="border-bottom:0.4px solid #7f7f7f;"> CESÁRIO LANGE « C « Municípios</td>
+</tr>
+</table>
+</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="tZebra">
+<td align="center"><div align="left"><strong>Classe:</strong></div></td>
+<td>Expediente « Expedientes</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="tZebra">
+<td align="center" nowrap><div align="left"><strong>Exercício:</strong></div></td>
+<td colspan="3">2024</td>
+</tr>
+<tr class="tZebra">
+<td align="center"><div align="left"><strong>Nível de acesso</strong></div></td>
+<td><div><strong>Padrão</strong></div></td>
+<td><strong>Âmbito:</strong></td>
+<td>Municipal</td>
+</tr>
+<tr class="tZebra">
+<td align="center" nowrap> <div align="left"><strong>Fase Processual:</strong></div></td>
+<td>ORIGINÁRIO</td>
+<td nowrap> <div align="left"><strong>Objeto:</strong></div></td>
+<td>- N/I -<div align="center"></div></td>
+</tr>
+<tr class="tZebra">
+<td align="center" nowrap> <div align="left"><strong>Situação:</strong></div></td>
+<td></td>
+<td nowrap> <div align="left"><strong>Data de Autuação:</strong></div></td>
+<td>25 de Outubro de 2024 às 15:50:53<div align="center"></div></td>
+</tr>
+<tr class="tZebra">
+<td align="center" nowrap><div align="left"><strong>Valor:</strong></div></td>
+<td><b> R$ 0,00</b></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="tZebra">
+<td height="18" align="center" nowrap><div align="left"><strong>Origem:</strong></div></td>
+<td colspan="1">
+DE
+</td>
+<td height="18" align="center" nowrap><div align="left"><strong>Data:</strong></div></td>
+<td colspan="1">
+25/10/2024
+</td>
+</tr>
+<tr class="tZebra">
+<td height="18" align="center" nowrap><div align="left"><strong>Resumo do Objeto:</strong></div></td>
+<td colspan="3">Of&iacute;cio n&ordm; 282/2024, de 24 de outubro de 2024.
+Assunto: encaminha para conhecimento e provid&ecirc;ncias a c&oacute;pia do Requerimento n&ordm; 310/2024.
+Subscrito pelo Presidende da C&acirc;mara Municipal Vereador Osmar Trevisan.</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="tZebra">
+<td height="18" align="center" nowrap><div align="left"><strong>Resultado da Decisão:</strong></div></td>
+<td colspan="3" style="color:red"><b>
+Arquivamento. 
+</b></td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</div>
+<script language="javascript">
+initPartes();
+listaZebrada('#zebra .tZebra', ['tBranca', 'tCinza']);
+</script>
+<div id="Arquivos">
+<table width="98%" border="0" align="center" cellpadding="0" cellspacing="0" bordercolor="#999999">
+<tr>
+<td>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr class="primeiraLinha">
+<td width="20"></td>
+<td width="36" nowrap>Nº</td>
+<td nowrap>Eventos do Processo</td>
+<td width="100" align="center" nowrap>Data</td>
+<td width="200" align="center" nowrap>Movimentado por</td>
+<td width="95" nowrap align="center">Arquivos/Observação</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="tBranca">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td width="20"></td>
+<td width="33"><div title="24-17709937-200061">24</div></td>
+<td>
+Processo encaminhado <BR>  CGCRMC
+</td>
+<td width="100" align="center" nowrap>02/02/2025 21:39</td>
+<td width="200" align="center">
+<div class="movimRespons">Sistema eletrônico</div></td>
+<td width="98" nowrap> <div style="cursor:pointer "> <div align="center">
+<table width="100%" border="0">
+<tr>
+<td width="50%">
+</td>
+<td width="50%">
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<span id="obs17709937">
+<div style="border-bottom: 2px solid rgb(102, 102, 102);">
+<div style="border-bottom: 2px solid rgb(255, 255, 255); border-left: 2px solid rgb(255, 255, 255); border-right: 2px solid rgb(255, 255, 255); border-bottom: 2px solid rgb(255, 255, 255);">
+<table align="center" width="100%" border="0" cellpadding="0" cellspacing="0">
+</table>
+</div>
+</div>
+</span>
+<span id="sub17709937">
+<div style="border-bottom: 2px solid rgb(102, 102, 102); ">Movimentação sem arquivos
+</div>
+<tr>
+<td class="tCinza">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td width="20"></td>
+<td width="33"><div title="23-17709936-36">23</div></td>
+<td>
+Distribuído por Conselheiro/Conselheiro Substituto - Auditor Específico <BR>   (Do Gabinete / Conselheiro/Conselheiro Substituto - Auditor GCARC / ANTONIO ROQUE CITADINI para GCRMC / RENATO MARTINS COSTA )
+</td>
+<td width="100" align="center" nowrap>02/02/2025 21:39</td>
+<td width="200" align="center">
+<div class="movimRespons">Administrador e-TCESP</div></td>
+<td width="98" nowrap> <div style="cursor:pointer "> <div align="center">
+<table width="100%" border="0">
+<tr>
+<td width="50%">
+</td>
+<td width="50%">
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<span id="obs17709936">
+<div style="border-bottom: 2px solid rgb(102, 102, 102);">
+<div style="border-bottom: 2px solid rgb(255, 255, 255); border-left: 2px solid rgb(255, 255, 255); border-right: 2px solid rgb(255, 255, 255); border-bottom: 2px solid rgb(255, 255, 255);">
+<table align="center" width="100%" border="0" cellpadding="0" cellspacing="0">
+</table>
+</div>
+</div>
+</span>
+<span id="sub17709936">
+<div style="border-bottom: 2px solid rgb(102, 102, 102); ">Movimentação sem arquivos
+</div>
+<tr>
+<td class="tBranca">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td width="20"></td>
+<td width="33"><div title="22-17160039-861">22</div></td>
+<td>
+Processo Arquivado <BR>   (EXTIN&Ccedil;&Atilde;O PROCESSO)
+</td>
+<td width="100" align="center" nowrap>04/11/2024 21:50</td>
+<td width="200" align="center">
+<div class="movimRespons">NELSON KOICHI KAKIUTI</div></td>
+<td width="98" nowrap> <div style="cursor:pointer "> <div align="center">
+<table width="100%" border="0">
+<tr>
+<td width="50%">
+</td>
+<td width="50%">
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<span id="obs17160039">
+<div style="border-bottom: 2px solid rgb(102, 102, 102);">
+<div style="border-bottom: 2px solid rgb(255, 255, 255); border-left: 2px solid rgb(255, 255, 255); border-right: 2px solid rgb(255, 255, 255); border-bottom: 2px solid rgb(255, 255, 255);">
+<table align="center" width="100%" border="0" cellpadding="0" cellspacing="0">
+</table>
+</div>
+</div>
+</span>
+<span id="sub17160039">
+<div style="border-bottom: 2px solid rgb(102, 102, 102); ">Movimentação sem arquivos
+</div>
+<tr>
+<td class="tCinza">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td width="20"></td>
+<td width="33"><div title="21-17160038-200069">21</div></td>
+<td>
+Resultado da decisão <BR>  Arquivamento. 
+</td>
+<td width="100" align="center" nowrap>04/11/2024 21:50</td>
+<td width="200" align="center">
+<div class="movimRespons">NELSON KOICHI KAKIUTI</div></td>
+<td width="98" nowrap> <div style="cursor:pointer "> <div align="center">
+<table width="100%" border="0">
+<tr>
+<td width="50%">
+</td>
+<td width="50%">
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<span id="obs17160038">
+<div style="border-bottom: 2px solid rgb(102, 102, 102);">
+<div style="border-bottom: 2px solid rgb(255, 255, 255); border-left: 2px solid rgb(255, 255, 255); border-right: 2px solid rgb(255, 255, 255); border-bottom: 2px solid rgb(255, 255, 255);">
+<table align="center" width="100%" border="0" cellpadding="0" cellspacing="0">
+</table>
+</div>
+</div>
+</span>
+<span id="sub17160038">
+<div style="border-bottom: 2px solid rgb(102, 102, 102); ">Movimentação sem arquivos
+</div>
+<tr>
+<td class="tBranca">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td width="20"></td>
+<td width="33"><div title="20-17160037-246">20</div></td>
+<td>
+Arquivado Definitivamente <BR> 
+</td>
+<td width="100" align="center" nowrap>04/11/2024 21:50</td>
+<td width="200" align="center">
+<div class="movimRespons">NELSON KOICHI KAKIUTI</div></td>
+<td width="98" nowrap> <div style="cursor:pointer "> <div align="center">
+<table width="100%" border="0">
+<tr>
+<td width="50%">
+</td>
+<td width="50%">
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<span id="obs17160037">
+<div style="border-bottom: 2px solid rgb(102, 102, 102);">
+<div style="border-bottom: 2px solid rgb(255, 255, 255); border-left: 2px solid rgb(255, 255, 255); border-right: 2px solid rgb(255, 255, 255); border-bottom: 2px solid rgb(255, 255, 255);">
+<table align="center" width="100%" border="0" cellpadding="0" cellspacing="0">
+</table>
+</div>
+</div>
+</span>
+<span id="sub17160037">
+<div style="border-bottom: 2px solid rgb(102, 102, 102); ">Movimentação sem arquivos
+</div>
+<tr>
+<td class="tCinza">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td width="20"></td>
+<td width="33"><div title="19-17160036-200056">19</div></td>
+<td>
+Juntada deferida - Outros (Ref. Protocolo: 17123143) <BR>  Complemento
+</td>
+<td width="100" align="center" nowrap>04/11/2024 21:50</td>
+<td width="200" align="center">
+<div class="movimRespons">NELSON KOICHI KAKIUTI</div></td>
+<td width="98" nowrap> <div style="cursor:pointer "> <div align="center">
+<table width="100%" border="0">
+<tr>
+<td width="50%">
+<a  href="javascript: mostra('sub17160036')"><img src="imagens/arquivos.png" border="0" width="16" height="16" title="Mostrar ou ocultar arquivos." onmouseover="this.src='imagens/arquivos02.png'" onmouseout="this.src='imagens/arquivos.png'" /></a>
+</td>
+<td width="50%">
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<span id="obs17160036">
+<div style="border-bottom: 2px solid rgb(102, 102, 102);">
+<div style="border-bottom: 2px solid rgb(255, 255, 255); border-left: 2px solid rgb(255, 255, 255); border-right: 2px solid rgb(255, 255, 255); border-bottom: 2px solid rgb(255, 255, 255);">
+<table align="center" width="100%" border="0" cellpadding="0" cellspacing="0">
+</table>
+</div>
+</div>
+</span>
+<span id="sub17160036">
+<div style="border-bottom: 2px solid rgb(102, 102, 102);">
+<div style="border-bottom: 2px solid rgb(255, 255, 255); border-left: 2px solid rgb(255, 255, 255); border-right: 2px solid rgb(255, 255, 255); border-bottom: 2px solid rgb(255, 255, 255);">
+<table align="center" width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td rowspan="1"><b> Arquivos:</b></td>
+<td nowrap>Indicação </td>
+<td align="center" nowrap><b>Ass.:</b> MARISA GARCEZ NICOLETTI</td>
+<td align="center"><b>Data inclusão: </b>30/10/2024 14:11</td>
+<td nowrap><b>Arquivo: </b>
+<a href="arquivos/arquivo8404593.pdf" target="_blank">Indicação nº 305.2024.pdf</a>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</span>
+</td>
+</tr>
+<tr>
+<td class="tBranca">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td width="20"></td>
+<td width="33"><div title="18-17159264-132">18</div></td>
+<td>
+Recebimento dos Autos <BR>  UR-09 (Anotado)
+</td>
+<td width="100" align="center" nowrap>04/11/2024 17:05</td>
+<td width="200" align="center">
+<div class="movimRespons">MAURO GUIMARAES COAM</div></td>
+<td width="98" nowrap> <div style="cursor:pointer "> <div align="center">
+<table width="100%" border="0">
+<tr>
+<td width="50%">
+<a  href="javascript: mostra('sub17159264')"><img src="imagens/arquivos.png" border="0" width="16" height="16" title="Mostrar ou ocultar arquivos." onmouseover="this.src='imagens/arquivos02.png'" onmouseout="this.src='imagens/arquivos.png'" /></a>
+</td>
+<td width="50%">
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<span id="obs17159264">
+<div style="border-bottom: 2px solid rgb(102, 102, 102);">
+<div style="border-bottom: 2px solid rgb(255, 255, 255); border-left: 2px solid rgb(255, 255, 255); border-right: 2px solid rgb(255, 255, 255); border-bottom: 2px solid rgb(255, 255, 255);">
+<table align="center" width="100%" border="0" cellpadding="0" cellspacing="0">
+</table>
+</div>
+</div>
+</span>
+<span id="sub17159264">
+<div style="border-bottom: 2px solid rgb(102, 102, 102);">
+<div style="border-bottom: 2px solid rgb(255, 255, 255); border-left: 2px solid rgb(255, 255, 255); border-right: 2px solid rgb(255, 255, 255); border-bottom: 2px solid rgb(255, 255, 255);">
+<table align="center" width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td rowspan="1"><b> Arquivos:</b></td>
+<td nowrap>Manifestação   UR-09 (Anotado)</td>
+<td align="center" nowrap><b>Ass.:</b> MAURO GUIMARAES COAM</td>
+<td align="center"><b>Data inclusão: </b>04/11/2024 17:05</td>
+<td nowrap><b>Arquivo: </b>
+<a href="arquivos/arquivo8420762.html" target="_blank">online.html</a>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</span>
+</td>
+</tr>
+<tr>
+<td class="tCinza">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td width="20"></td>
+<td width="33"><div title="17-17158001-493">17</div></td>
+<td>
+Autos entregues em carga ao UR-09 <BR> 
+</td>
+<td width="100" align="center" nowrap>04/11/2024 15:35</td>
+<td width="200" align="center">
+<div class="movimRespons">NELSON KOICHI KAKIUTI</div></td>
+<td width="98" nowrap> <div style="cursor:pointer "> <div align="center">
+<table width="100%" border="0">
+<tr>
+<td width="50%">
+</td>
+<td width="50%">
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<span id="obs17158001">
+<div style="border-bottom: 2px solid rgb(102, 102, 102);">
+<div style="border-bottom: 2px solid rgb(255, 255, 255); border-left: 2px solid rgb(255, 255, 255); border-right: 2px solid rgb(255, 255, 255); border-bottom: 2px solid rgb(255, 255, 255);">
+<table align="center" width="100%" border="0" cellpadding="0" cellspacing="0">
+</table>
+</div>
+</div>
+</span>
+<span id="sub17158001">
+<div style="border-bottom: 2px solid rgb(102, 102, 102); ">Movimentação sem arquivos
+</div>
+<tr>
+<td class="tBranca">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td width="20"></td>
+<td width="33"><div title="16-17157051-200061">16</div></td>
+<td>
+Processo encaminhado <BR>  CGCARC
+</td>
+<td width="100" align="center" nowrap>04/11/2024 14:33</td>
+<td width="200" align="center">
+<div class="movimRespons">ANTONIO ROQUE CITADINI</div></td>
+<td width="98" nowrap> <div style="cursor:pointer "> <div align="center">
+<table width="100%" border="0">
+<tr>
+<td width="50%">
+</td>
+<td width="50%">
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<span id="obs17157051">
+<div style="border-bottom: 2px solid rgb(102, 102, 102);">
+<div style="border-bottom: 2px solid rgb(255, 255, 255); border-left: 2px solid rgb(255, 255, 255); border-right: 2px solid rgb(255, 255, 255); border-bottom: 2px solid rgb(255, 255, 255);">
+<table align="center" width="100%" border="0" cellpadding="0" cellspacing="0">
+</table>
+</div>
+</div>
+</span>
+<span id="sub17157051">
+<div style="border-bottom: 2px solid rgb(102, 102, 102); ">Movimentação sem arquivos
+</div>
+<tr>
+<td class="tCinza">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td width="20"></td>
+<td width="33"><div title="15-17157050-5001">15</div></td>
+<td>
+Cumprir Decisão/Despacho do(a) Conselheiro(a)/Auditor(a) <BR> 
+</td>
+<td width="100" align="center" nowrap>04/11/2024 14:33</td>
+<td width="200" align="center">
+<div class="movimRespons">ANTONIO ROQUE CITADINI</div></td>
+<td width="98" nowrap> <div style="cursor:pointer "> <div align="center">
+<table width="100%" border="0">
+<tr>
+<td width="50%">
+<a  href="javascript: mostra('sub17157050')"><img src="imagens/arquivos.png" border="0" width="16" height="16" title="Mostrar ou ocultar arquivos." onmouseover="this.src='imagens/arquivos02.png'" onmouseout="this.src='imagens/arquivos.png'" /></a>
+</td>
+<td width="50%">
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<span id="obs17157050">
+<div style="border-bottom: 2px solid rgb(102, 102, 102);">
+<div style="border-bottom: 2px solid rgb(255, 255, 255); border-left: 2px solid rgb(255, 255, 255); border-right: 2px solid rgb(255, 255, 255); border-bottom: 2px solid rgb(255, 255, 255);">
+<table align="center" width="100%" border="0" cellpadding="0" cellspacing="0">
+</table>
+</div>
+</div>
+</span>
+<span id="sub17157050">
+<div style="border-bottom: 2px solid rgb(102, 102, 102);">
+<div style="border-bottom: 2px solid rgb(255, 255, 255); border-left: 2px solid rgb(255, 255, 255); border-right: 2px solid rgb(255, 255, 255); border-bottom: 2px solid rgb(255, 255, 255);">
+<table align="center" width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td rowspan="1"><b> Arquivos:</b></td>
+<td nowrap>Conclusão </td>
+<td align="center" nowrap><b>Ass.:</b> ANTONIO ROQUE CITADINI</td>
+<td align="center"><b>Data inclusão: </b>04/11/2024 14:32</td>
+<td nowrap><b>Arquivo: </b>
+<a href="arquivos/arquivo8419415.html" target="_blank">online.html</a>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</span>
+</td>
+</tr>
+<tr>
+<td class="tBranca">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td width="20"></td>
+<td width="33"><div title="14-17152902-51">14</div></td>
+<td>
+Conclusos para Despacho <BR> 
+</td>
+<td width="100" align="center" nowrap>04/11/2024 10:19</td>
+<td width="200" align="center">
+<div class="movimRespons">OTAVIO AUGUSTO GAMBARINI ZEN</div></td>
+<td width="98" nowrap> <div style="cursor:pointer "> <div align="center">
+<table width="100%" border="0">
+<tr>
+<td width="50%">
+</td>
+<td width="50%">
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<span id="obs17152902">
+<div style="border-bottom: 2px solid rgb(102, 102, 102);">
+<div style="border-bottom: 2px solid rgb(255, 255, 255); border-left: 2px solid rgb(255, 255, 255); border-right: 2px solid rgb(255, 255, 255); border-bottom: 2px solid rgb(255, 255, 255);">
+<table align="center" width="100%" border="0" cellpadding="0" cellspacing="0">
+</table>
+</div>
+</div>
+</span>
+<span id="sub17152902">
+<div style="border-bottom: 2px solid rgb(102, 102, 102); ">Movimentação sem arquivos
+</div>
+<tr>
+<td class="tCinza">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td width="20"></td>
+<td width="33"><div title="13-17152901-500016">13</div></td>
+<td>
+Cumprir determinação do(a) Relator(a) para as providências  <BR> 
+</td>
+<td width="100" align="center" nowrap>04/11/2024 10:19</td>
+<td width="200" align="center">
+<div class="movimRespons">OTAVIO AUGUSTO GAMBARINI ZEN</div></td>
+<td width="98" nowrap> <div style="cursor:pointer "> <div align="center">
+<table width="100%" border="0">
+<tr>
+<td width="50%">
+</td>
+<td width="50%">
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<span id="obs17152901">
+<div style="border-bottom: 2px solid rgb(102, 102, 102);">
+<div style="border-bottom: 2px solid rgb(255, 255, 255); border-left: 2px solid rgb(255, 255, 255); border-right: 2px solid rgb(255, 255, 255); border-bottom: 2px solid rgb(255, 255, 255);">
+<table align="center" width="100%" border="0" cellpadding="0" cellspacing="0">
+</table>
+</div>
+</div>
+</span>
+<span id="sub17152901">
+<div style="border-bottom: 2px solid rgb(102, 102, 102); ">Movimentação sem arquivos
+</div>
+<tr>
+<td class="tBranca">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td width="20"></td>
+<td width="33"><div title="12-17144890-326">12</div></td>
+<td>
+Distribuído por Prevenção <BR>  no Setor
+</td>
+<td width="100" align="center" nowrap>01/11/2024 10:44</td>
+<td width="200" align="center">
+<div class="movimRespons">FERNANDO CARVALHO DE ALMEIDA</div></td>
+<td width="98" nowrap> <div style="cursor:pointer "> <div align="center">
+<table width="100%" border="0">
+<tr>
+<td width="50%">
+</td>
+<td width="50%">
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<span id="obs17144890">
+<div style="border-bottom: 2px solid rgb(102, 102, 102);">
+<div style="border-bottom: 2px solid rgb(255, 255, 255); border-left: 2px solid rgb(255, 255, 255); border-right: 2px solid rgb(255, 255, 255); border-bottom: 2px solid rgb(255, 255, 255);">
+<table align="center" width="100%" border="0" cellpadding="0" cellspacing="0">
+</table>
+</div>
+</div>
+</span>
+<span id="sub17144890">
+<div style="border-bottom: 2px solid rgb(102, 102, 102); ">Movimentação sem arquivos
+</div>
+<tr>
+<td class="tCinza">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td width="20"></td>
+<td width="33"><div title="11-17127143-200061">11</div></td>
+<td>
+Processo encaminhado <BR>  GCARC
+</td>
+<td width="100" align="center" nowrap>30/10/2024 16:52</td>
+<td width="200" align="center">
+<div class="movimRespons">Sistema eletrônico</div></td>
+<td width="98" nowrap> <div style="cursor:pointer "> <div align="center">
+<table width="100%" border="0">
+<tr>
+<td width="50%">
+</td>
+<td width="50%">
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<span id="obs17127143">
+<div style="border-bottom: 2px solid rgb(102, 102, 102);">
+<div style="border-bottom: 2px solid rgb(255, 255, 255); border-left: 2px solid rgb(255, 255, 255); border-right: 2px solid rgb(255, 255, 255); border-bottom: 2px solid rgb(255, 255, 255);">
+<table align="center" width="100%" border="0" cellpadding="0" cellspacing="0">
+</table>
+</div>
+</div>
+</span>
+<span id="sub17127143">
+<div style="border-bottom: 2px solid rgb(102, 102, 102); ">Movimentação sem arquivos
+</div>
+<tr>
+<td class="tBranca">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td width="20"></td>
+<td width="33"><div title="10-17127142-36">10</div></td>
+<td>
+Distribuído por Conselheiro/Auditor Específico <BR>   (Do Gabinete / Conselheiro/Auditor GP / RENATO MARTINS COSTA para GCARC / ANTONIO ROQUE CITADINI )
+</td>
+<td width="100" align="center" nowrap>30/10/2024 16:52</td>
+<td width="200" align="center">
+<div class="movimRespons">SIDNEY RIBEIRO DA MATTA</div></td>
+<td width="98" nowrap> <div style="cursor:pointer "> <div align="center">
+<table width="100%" border="0">
+<tr>
+<td width="50%">
+</td>
+<td width="50%">
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<span id="obs17127142">
+<div style="border-bottom: 2px solid rgb(102, 102, 102);">
+<div style="border-bottom: 2px solid rgb(255, 255, 255); border-left: 2px solid rgb(255, 255, 255); border-right: 2px solid rgb(255, 255, 255); border-bottom: 2px solid rgb(255, 255, 255);">
+<table align="center" width="100%" border="0" cellpadding="0" cellspacing="0">
+</table>
+</div>
+</div>
+</span>
+<span id="sub17127142">
+<div style="border-bottom: 2px solid rgb(102, 102, 102); ">Movimentação sem arquivos
+</div>
+<tr>
+<td class="tCinza">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td width="20"></td>
+<td width="33"><div title="9-17125339-5001">9</div></td>
+<td>
+Cumprir Decisão/Despacho do(a) Conselheiro(a)/Auditor(a) <BR> 
+</td>
+<td width="100" align="center" nowrap>30/10/2024 15:29</td>
+<td width="200" align="center">
+<div class="movimRespons">RENATO MARTINS COSTA</div></td>
+<td width="98" nowrap> <div style="cursor:pointer "> <div align="center">
+<table width="100%" border="0">
+<tr>
+<td width="50%">
+<a  href="javascript: mostra('sub17125339')"><img src="imagens/arquivos.png" border="0" width="16" height="16" title="Mostrar ou ocultar arquivos." onmouseover="this.src='imagens/arquivos02.png'" onmouseout="this.src='imagens/arquivos.png'" /></a>
+</td>
+<td width="50%">
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<span id="obs17125339">
+<div style="border-bottom: 2px solid rgb(102, 102, 102);">
+<div style="border-bottom: 2px solid rgb(255, 255, 255); border-left: 2px solid rgb(255, 255, 255); border-right: 2px solid rgb(255, 255, 255); border-bottom: 2px solid rgb(255, 255, 255);">
+<table align="center" width="100%" border="0" cellpadding="0" cellspacing="0">
+</table>
+</div>
+</div>
+</span>
+<span id="sub17125339">
+<div style="border-bottom: 2px solid rgb(102, 102, 102);">
+<div style="border-bottom: 2px solid rgb(255, 255, 255); border-left: 2px solid rgb(255, 255, 255); border-right: 2px solid rgb(255, 255, 255); border-bottom: 2px solid rgb(255, 255, 255);">
+<table align="center" width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td rowspan="1"><b> Arquivos:</b></td>
+<td nowrap>Conclusão </td>
+<td align="center" nowrap><b>Ass.:</b> RENATO MARTINS COSTA</td>
+<td align="center"><b>Data inclusão: </b>30/10/2024 15:29</td>
+<td nowrap><b>Arquivo: </b>
+<a href="arquivos/arquivo8405753.html" target="_blank">online.html</a>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</span>
+</td>
+</tr>
+<tr>
+<td class="tBranca">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td width="20"></td>
+<td width="33"><div title="8-17123143-85">8</div></td>
+<td>
+Solicitação de juntada - Juntada de Petição - Outros (Protocolo: 17123143) <BR>  Complemento
+</td>
+<td width="100" align="center" nowrap>30/10/2024 14:11</td>
+<td width="200" align="center">
+<div class="movimRespons">MARISA GARCEZ NICOLETTI</div></td>
+<td width="98" nowrap> <div style="cursor:pointer "> <div align="center">
+<table width="100%" border="0">
+<tr>
+<td width="50%">
+</td>
+<td width="50%">
+<a  href="javascript: mostra('obs17123143')" ><img src="imagens/observacao.png" border="0" width="16" height="16" title="Mostrar ou ocultar observações" onmouseover="this.src='imagens/observacao02.png'" onmouseout="this.src='imagens/observacao.png'" /></a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<span id="obs17123143">
+<div style="border-bottom: 2px solid rgb(102, 102, 102);">
+<div style="border-bottom: 2px solid rgb(255, 255, 255); border-left: 2px solid rgb(255, 255, 255); border-right: 2px solid rgb(255, 255, 255); border-bottom: 2px solid rgb(255, 255, 255);">
+<table align="center" width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td colspan="4" nowrap="nowrap">
+<table border="0">
+<tr>
+<td><b>Observação:</b></td>
+<td nowrap="nowrap">Juntada deferida em 04/11/2024 21:50</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</span>
+<span id="sub17123143">
+<div style="border-bottom: 2px solid rgb(102, 102, 102); ">Movimentação sem arquivos
+</div>
+<tr>
+<td class="tCinza">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td width="20"></td>
+<td width="33"><div title="7-17111292-51">7</div></td>
+<td>
+Conclusos para Despacho <BR> 
+</td>
+<td width="100" align="center" nowrap>29/10/2024 15:00</td>
+<td width="200" align="center">
+<div class="movimRespons">ITAMAR BARROS DE OLIVEIRA</div></td>
+<td width="98" nowrap> <div style="cursor:pointer "> <div align="center">
+<table width="100%" border="0">
+<tr>
+<td width="50%">
+</td>
+<td width="50%">
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<span id="obs17111292">
+<div style="border-bottom: 2px solid rgb(102, 102, 102);">
+<div style="border-bottom: 2px solid rgb(255, 255, 255); border-left: 2px solid rgb(255, 255, 255); border-right: 2px solid rgb(255, 255, 255); border-bottom: 2px solid rgb(255, 255, 255);">
+<table align="center" width="100%" border="0" cellpadding="0" cellspacing="0">
+</table>
+</div>
+</div>
+</span>
+<span id="sub17111292">
+<div style="border-bottom: 2px solid rgb(102, 102, 102); ">Movimentação sem arquivos
+</div>
+<tr>
+<td class="tBranca">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td width="20"></td>
+<td width="33"><div title="6-17111291-500151">6</div></td>
+<td>
+Processo concluso <BR> 
+</td>
+<td width="100" align="center" nowrap>29/10/2024 15:00</td>
+<td width="200" align="center">
+<div class="movimRespons">ITAMAR BARROS DE OLIVEIRA</div></td>
+<td width="98" nowrap> <div style="cursor:pointer "> <div align="center">
+<table width="100%" border="0">
+<tr>
+<td width="50%">
+</td>
+<td width="50%">
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<span id="obs17111291">
+<div style="border-bottom: 2px solid rgb(102, 102, 102);">
+<div style="border-bottom: 2px solid rgb(255, 255, 255); border-left: 2px solid rgb(255, 255, 255); border-right: 2px solid rgb(255, 255, 255); border-bottom: 2px solid rgb(255, 255, 255);">
+<table align="center" width="100%" border="0" cellpadding="0" cellspacing="0">
+</table>
+</div>
+</div>
+</span>
+<span id="sub17111291">
+<div style="border-bottom: 2px solid rgb(102, 102, 102); ">Movimentação sem arquivos
+</div>
+<tr>
+<td class="tCinza">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td width="20"></td>
+<td width="33"><div title="5-17099314-326">5</div></td>
+<td>
+Distribuído por Prevenção <BR>  no Setor
+</td>
+<td width="100" align="center" nowrap>25/10/2024 16:07</td>
+<td width="200" align="center">
+<div class="movimRespons">MARCIO CESAR BELTRAMINI</div></td>
+<td width="98" nowrap> <div style="cursor:pointer "> <div align="center">
+<table width="100%" border="0">
+<tr>
+<td width="50%">
+</td>
+<td width="50%">
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<span id="obs17099314">
+<div style="border-bottom: 2px solid rgb(102, 102, 102);">
+<div style="border-bottom: 2px solid rgb(255, 255, 255); border-left: 2px solid rgb(255, 255, 255); border-right: 2px solid rgb(255, 255, 255); border-bottom: 2px solid rgb(255, 255, 255);">
+<table align="center" width="100%" border="0" cellpadding="0" cellspacing="0">
+</table>
+</div>
+</div>
+</span>
+<span id="sub17099314">
+<div style="border-bottom: 2px solid rgb(102, 102, 102); ">Movimentação sem arquivos
+</div>
+<tr>
+<td class="tBranca">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td width="20"></td>
+<td width="33"><div title="4-17099283-200061">4</div></td>
+<td>
+Processo encaminhado <BR>  GP
+</td>
+<td width="100" align="center" nowrap>25/10/2024 16:05</td>
+<td width="200" align="center">
+<div class="movimRespons">MARISA GARCEZ NICOLETTI</div></td>
+<td width="98" nowrap> <div style="cursor:pointer "> <div align="center">
+<table width="100%" border="0">
+<tr>
+<td width="50%">
+</td>
+<td width="50%">
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<span id="obs17099283">
+<div style="border-bottom: 2px solid rgb(102, 102, 102);">
+<div style="border-bottom: 2px solid rgb(255, 255, 255); border-left: 2px solid rgb(255, 255, 255); border-right: 2px solid rgb(255, 255, 255); border-bottom: 2px solid rgb(255, 255, 255);">
+<table align="center" width="100%" border="0" cellpadding="0" cellspacing="0">
+</table>
+</div>
+</div>
+</span>
+<span id="sub17099283">
+<div style="border-bottom: 2px solid rgb(102, 102, 102); ">Movimentação sem arquivos
+</div>
+<tr>
+<td class="tCinza">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td width="20"></td>
+<td width="33"><div title="3-17099070-200061">3</div></td>
+<td>
+Processo encaminhado <BR>  PE
+</td>
+<td width="100" align="center" nowrap>25/10/2024 15:50</td>
+<td width="200" align="center">
+<div class="movimRespons">Sistema eletrônico</div></td>
+<td width="98" nowrap> <div style="cursor:pointer "> <div align="center">
+<table width="100%" border="0">
+<tr>
+<td width="50%">
+</td>
+<td width="50%">
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<span id="obs17099070">
+<div style="border-bottom: 2px solid rgb(102, 102, 102);">
+<div style="border-bottom: 2px solid rgb(255, 255, 255); border-left: 2px solid rgb(255, 255, 255); border-right: 2px solid rgb(255, 255, 255); border-bottom: 2px solid rgb(255, 255, 255);">
+<table align="center" width="100%" border="0" cellpadding="0" cellspacing="0">
+</table>
+</div>
+</div>
+</span>
+<span id="sub17099070">
+<div style="border-bottom: 2px solid rgb(102, 102, 102); ">Movimentação sem arquivos
+</div>
+<tr>
+<td class="tBranca">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td width="20"></td>
+<td width="33"><div title="2-17099069-26">2</div></td>
+<td>
+Distribuído para <BR>  GP
+</td>
+<td width="100" align="center" nowrap>25/10/2024 15:50</td>
+<td width="200" align="center">
+<div class="movimRespons">Sistema eletrônico</div></td>
+<td width="98" nowrap> <div style="cursor:pointer "> <div align="center">
+<table width="100%" border="0">
+<tr>
+<td width="50%">
+</td>
+<td width="50%">
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<span id="obs17099069">
+<div style="border-bottom: 2px solid rgb(102, 102, 102);">
+<div style="border-bottom: 2px solid rgb(255, 255, 255); border-left: 2px solid rgb(255, 255, 255); border-right: 2px solid rgb(255, 255, 255); border-bottom: 2px solid rgb(255, 255, 255);">
+<table align="center" width="100%" border="0" cellpadding="0" cellspacing="0">
+</table>
+</div>
+</div>
+</span>
+<span id="sub17099069">
+<div style="border-bottom: 2px solid rgb(102, 102, 102); ">Movimentação sem arquivos
+</div>
+<tr>
+<td class="tCinza">
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr >
+<td width="20"></td>
+<td width="33"><div title="1-17099068-981">1</div></td>
+<td>
+Processo Autuado <BR>  Origem: DE
+</td>
+<td width="100" align="center" nowrap>25/10/2024 15:50</td>
+<td width="200" align="center">
+<div class="movimRespons">MARISA GARCEZ NICOLETTI</div></td>
+<td width="98" nowrap> <div style="cursor:pointer "> <div align="center">
+<table width="100%" border="0">
+<tr>
+<td width="50%">
+<a  href="javascript: mostra('sub17099068')"><img src="imagens/arquivos.png" border="0" width="16" height="16" title="Mostrar ou ocultar arquivos." onmouseover="this.src='imagens/arquivos02.png'" onmouseout="this.src='imagens/arquivos.png'" /></a>
+</td>
+<td width="50%">
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<span id="obs17099068">
+<div style="border-bottom: 2px solid rgb(102, 102, 102);">
+<div style="border-bottom: 2px solid rgb(255, 255, 255); border-left: 2px solid rgb(255, 255, 255); border-right: 2px solid rgb(255, 255, 255); border-bottom: 2px solid rgb(255, 255, 255);">
+<table align="center" width="100%" border="0" cellpadding="0" cellspacing="0">
+</table>
+</div>
+</div>
+</span>
+<span id="sub17099068">
+<div style="border-bottom: 2px solid rgb(102, 102, 102);">
+<div style="border-bottom: 2px solid rgb(255, 255, 255); border-left: 2px solid rgb(255, 255, 255); border-right: 2px solid rgb(255, 255, 255); border-bottom: 2px solid rgb(255, 255, 255);">
+<table align="center" width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td rowspan="2"><b> Arquivos:</b></td>
+<td nowrap>Ofício </td>
+<td align="center" nowrap><b>Ass.:</b> MARISA GARCEZ NICOLETTI</td>
+<td align="center"><b>Data inclusão: </b>25/10/2024 15:50</td>
+<td nowrap><b>Arquivo: </b>
+<a href="arquivos/arquivo8395261.pdf" target="_blank">Ofício nº 282.2024 - Ref. Requerimento nº 310.2024.pdf</a>
+</td>
+</tr>
+<tr>
+<td nowrap>Requerimento</td>
+<td align="center" nowrap><b>Ass.:</b> MARISA GARCEZ NICOLETTI</td>
+<td align="center"><b>Data inclusão: </b>25/10/2024 15:50</td>
+<td nowrap><b>Arquivo: </b>
+<a href="arquivos/arquivo8395262.pdf" target="_blank">Requerimento nº 310.2024.pdf</a>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</span>
+</td>
+</tr>
+</table>
+</div>
+<script language="javascript">
+var ar = document.getElementById("Arquivos").getElementsByTagName("span");
+for (var i=0; i<ar.length; i++){ ar[i].style.display = "none"; }
+</script>
+<br>
+</div>
+</body></html>
